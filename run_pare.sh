@@ -1,4 +1,4 @@
-CURRENT_DIR=$(cd "$(dirname "$0")";pwd)
+
 git clone https://github.com/SmallPigPeppa/mover.git
 cd "$PWD"/mover/preprocess/pare
 
