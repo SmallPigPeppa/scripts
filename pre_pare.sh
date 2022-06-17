@@ -8,7 +8,7 @@ JSON_FOLDER="/root/code/mover/preprocess/Color_flip/Color_flip_openpose"
 #pare_result='/ps/scratch/hyi/HCI_dataset/20210209_experiments/PROX_sample/N3OpenArea_00157_02/pare/pare_output.pkl'
 pare_result='/root/code/mover/preprocess/Color_flip/pare_output.pkl'
 # not use
-cam_dir='root/code/mover/smplifyx_cam'
+cam_dir='/root/code/mover/smplifyx_cam'
 # ! end
 echo ${DATA_FOLDER}
 echo ${OUTPUT_FOLDER}
