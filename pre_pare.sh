@@ -35,3 +35,6 @@ python demo_pare_result.py \
     --part_segm_fn /root/code/mover/smplifyx-file/smplx_parts_segm.pkl \
     --gender male \
     --check_inverse_feet="False" \
+
+
+cd /root/code/scripts
