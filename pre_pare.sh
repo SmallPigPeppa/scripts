@@ -17,7 +17,8 @@ MODEL_FOLDER=/root/code/mover/body_models
 VPOSER_FOLDER=/root/code/mover/smplifyx-file/vposer_v1_0
 #source /is/cluster/hyi/venv/smplify/bin/activate
 cd /root/code/mover/preprocess/pre_pare_scripts/
-source activate pare-env
+#source activate pare-env
+source activate smplifyx
 python demo_pare_result.py \
     --config ./cfg_files/fit_smpl.yaml \
     --export_mesh True \
