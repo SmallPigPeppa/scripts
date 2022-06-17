@@ -14,7 +14,8 @@ echo ${DATA_FOLDER}
 echo ${OUTPUT_FOLDER}
 #MODEL_FOLDER=/ps/scratch/ps_shared/mkocabas/pare_results/data/body_models
 #VPOSER_FOLDER=/lustre/home/hyi/workspace/Multi-IOI/multiview_smplifyx/smpl-x_model/vposer_v1_0
-MODEL_FOLDER=/root/code/mover/body_models
+#MODEL_FOLDER=/root/code/mover/body_models
+MODEL_FOLDER=/root/code/mover/preprocess/pare/data/body_models
 VPOSER_FOLDER=/root/code/mover/smplifyx-file/vposer_v1_0
 #source /is/cluster/hyi/venv/smplify/bin/activate
 cd /root/code/mover/preprocess/pre_pare_scripts/
