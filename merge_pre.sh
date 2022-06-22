@@ -3,9 +3,9 @@ conda activate pare-env
 cd /root/code/mover/preprocess/merge_preprocess/
 
 
-pare_model=/root/code/moverpreprocess/pare/hrnet_model
-video_file=/root/code/moverpreprocess/pare/Color_flip.mp4
-out_dir=/root/code/moverpreprocess/merge_preprocess/Color_flip-out
+pare_model=/root/code/mover/preprocess/pare/hrnet_model
+video_file=/root/code/mover/preprocess/pare/Color_flip.mp4
+out_dir=/root/code/mover/preprocess/merge_preprocess/Color_flip-out
 
 python demo.py \
        --cfg ${pare_model}/config.yaml \
