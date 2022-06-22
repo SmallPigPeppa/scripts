@@ -20,6 +20,7 @@ python demo.py \
 
 
 
+
 #DATA_FOLDER='/root/code/mover/preprocess/Color_flip/Color_flip_frames'
 #OUTPUT_FOLDER="/root/code/mover/preprocess/Color_flip_merge/OneEuro_filter_mv_smplifyx_input_withPARE"
 #JSON_FOLDER="/root/code/mover/preprocess/Color_flip/Color_flip_openpose"
