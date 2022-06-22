@@ -1,7 +1,7 @@
 
 #DATA_FOLDER='/ps/scratch/hyi/HCI_dataset/20210209_experiments/PROX_sample/N3OpenArea_00157_02/Color_flip_rename'
 DATA_FOLDER='/root/code/mover/preprocess/Color_flip/Color_flip_frames'
-OUTPUT_FOLDER="/root/code/mover/preprocess/Color_flip/OneEuro_filter_mv_smplifyx_input_withPARE"
+OUTPUT_FOLDER="/root/code/mover/preprocess/Color_flip_debug/OneEuro_filter_mv_smplifyx_input_withPARE"
 
 #JSON_FOLDER="/ps/scratch/hyi/HCI_dataset/20210209_experiments/PROX_sample/N3OpenArea_00157_02/openpose_filter/Color_flip_rename_openpose"
 JSON_FOLDER="/root/code/mover/preprocess/Color_flip/Color_flip_openpose"
