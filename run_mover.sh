@@ -34,10 +34,11 @@ cd /root/code/mover
 # export PYTHONPATH=/is/cluster/hyi/workspace/SceneGeneration/smplify-x_modify:${PYTHONPATH}
 # python body_models/video_smplifyx/main_video.py \
 # ! save_meshes=True: save mesh and rendered images.
+
 python main.py \
     --single "False" \
     --config ${CONFIG_FILE} \
-    --img_list ${img_list} \
+    --img_list 1 \
     --batch_size ${batch_size} \
     --data_folder ${DATA_FOLDER} \
     --output_folder ${OUTPUT_FOLDER} \
