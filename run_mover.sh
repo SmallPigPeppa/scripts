@@ -26,6 +26,7 @@ MODEL_FOLDER=/root/code/smplify-x_modify/models
 VPOSER_FOLDER=/root/code/smplify-x_modify/vposer_v1_0
 
 conda activate mover
+cd /root/code/mover
 # first opt 3D joint on 3D skeletons
 # Then opt in [start_opt_stage, end_opt_stage): focus on hands.
 
@@ -54,3 +55,6 @@ python main.py \
     --calib_path ${CALIBRATION_FOLDER} \
     --start_opt_stage 3 \
     --end_opt_stage 5
+
+
+cd /root/code/scripts
