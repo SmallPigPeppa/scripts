@@ -13,7 +13,7 @@ img_list=$1
 DATA_FOLDER="/root/code/mover/preprocess/Color_flip/OneEuro_filter_mv_smplifyx_input_withPARE_PARE3DJointOneConfidence_OP2DJoints"
 OUTPUT_FOLDER="/root/code/mover/preprocess/Color_flip/mover_results"
 #CALIBRATION_FOLDER=${INPUT_DATA}/smplifyx_cam
-CALIBRATION_FOLDER=/root/code/mover/smplifyx_cam
+CALIBRATION_FOLDER=/root/code/smplify-x_modify/smplifyx_cam
 #CONFIG_FILE=/is/cluster/hyi/workspace/SceneGeneration/smplify-x_modify/body_models/cfg_files/fit_smplx_video.yaml
 CONFIG_FILE=/root/code/smplify-x_modify/body_models/cfg_files/fit_smplx_video.yaml
 # end of modify
