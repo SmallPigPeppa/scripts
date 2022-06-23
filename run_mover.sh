@@ -15,7 +15,7 @@ OUTPUT_FOLDER="/root/code/mover/preprocess/Color_flip/mover_results"
 #CALIBRATION_FOLDER=${INPUT_DATA}/smplifyx_cam
 CALIBRATION_FOLDER=/root/code/smplify-x_modify/smplify_video_input/smplifyx_cam
 #CONFIG_FILE=/is/cluster/hyi/workspace/SceneGeneration/smplify-x_modify/body_models/cfg_files/fit_smplx_video.yaml
-CONFIG_FILE=/root/code/smplify-x_modify/body_models/cfg_files/fit_smplx_video.yaml
+CONFIG_FILE=/root/code/mover/body_models/cfg_files/fit_smplx_video.yaml
 # end of modify
 echo ${DATA_FOLDER}
 echo ${OUTPUT_FOLDER}
