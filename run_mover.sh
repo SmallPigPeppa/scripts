@@ -7,18 +7,25 @@
 batch_size=100
 # img_list=`expr "$1" + "2"`
 img_list=$1
-INPUT_DATA="/is/cluster/hyi/workspace/SceneGeneration/smplify-x_modify/debug/smplify_video_input/"
-DATA_FOLDER=${INPUT_DATA}/"mv_smplifyx_input_OneEuroFilter_PARE_PARE3DJointOneConfidence_OP2DJoints"
-OUTPUT_FOLDER=${INPUT_DATA}/"results"
-CALIBRATION_FOLDER=${INPUT_DATA}/smplifyx_cam
-CONFIG_FILE=/is/cluster/hyi/workspace/SceneGeneration/smplify-x_modify/body_models/cfg_files/fit_smplx_video.yaml
+#INPUT_DATA="/is/cluster/hyi/workspace/SceneGeneration/smplify-x_modify/debug/smplify_video_input/"
+#INPUT_DATA="/root/code/mover/preprocess/Color_flip/Color_flip_frames"
+#DATA_FOLDER=${INPUT_DATA}/"mv_smplifyx_input_OneEuroFilter_PARE_PARE3DJointOneConfidence_OP2DJoints"
+DATA_FOLDER="/root/code/mover/preprocess/Color_flip/OneEuro_filter_mv_smplifyx_input_withPARE_PARE3DJointOneConfidence_OP2DJoints"
+OUTPUT_FOLDER="/root/code/mover/preprocess/Color_flip/mover_results"
+#CALIBRATION_FOLDER=${INPUT_DATA}/smplifyx_cam
+CALIBRATION_FOLDER=/root/code/mover/smplifyx_cam
+#CONFIG_FILE=/is/cluster/hyi/workspace/SceneGeneration/smplify-x_modify/body_models/cfg_files/fit_smplx_video.yaml
+CONFIG_FILE=/root/code/smplify-x_modify/body_models/cfg_files/fit_smplx_video.yaml
 # end of modify
 echo ${DATA_FOLDER}
 echo ${OUTPUT_FOLDER}
 # --cam_inc_fn ${cam_inc_fn} \
-MODEL_FOLDER=/is/cluster/hyi/workspace/Multi-IOI/multiview_smplifyx/smpl-x_model/models
-VPOSER_FOLDER=/is/cluster/hyi/workspace/Multi-IOI/multiview_smplifyx/smpl-x_model/vposer_v1_0
-source /is/cluster/hyi/venv/smplify/bin/activate
+#MODEL_FOLDER=/is/cluster/hyi/workspace/Multi-IOI/multiview_smplifyx/smpl-x_model/models
+#VPOSER_FOLDER=/is/cluster/hyi/workspace/Multi-IOI/multiview_smplifyx/smpl-x_model/vposer_v1_0
+MODEL_FOLDER=/root/code/smplify-x_modify/models
+VPOSER_FOLDER=/root/code/smplify-x_modify/vposer_v1_0
+
+conda activate mover
 # first opt 3D joint on 3D skeletons
 # Then opt in [start_opt_stage, end_opt_stage): focus on hands.
 
@@ -26,7 +33,7 @@ source /is/cluster/hyi/venv/smplify/bin/activate
 # export PYTHONPATH=/is/cluster/hyi/workspace/SceneGeneration/smplify-x_modify:${PYTHONPATH}
 # python body_models/video_smplifyx/main_video.py \
 # ! save_meshes=True: save mesh and rendered images.
-python /is/cluster/hyi/workspace/SceneGeneration/smplify-x_modify/main.py \
+python main.py \
     --single "False" \
     --config ${CONFIG_FILE} \
     --img_list ${img_list} \
@@ -40,7 +47,7 @@ python /is/cluster/hyi/workspace/SceneGeneration/smplify-x_modify/main.py \
     --pre_load="False" \
     --pre_load_pare_pose="False" \
     --vposer_ckpt ${VPOSER_FOLDER} \
-    --part_segm_fn /lustre/home/hyi/workspace/Multi-IOI/multiview_smplifyx/smpl-x_model/smplx_parts_segm.pkl \
+    --part_segm_fn /root/code/smplify-x_modify/smplx_parts_segm.pkl \
     --camera_type "user" \
     --gender 'male' \
     --use_video "True" \
