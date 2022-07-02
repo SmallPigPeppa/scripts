@@ -16,3 +16,5 @@ python demo.py \
        --vid_file ${video_file} \
        --draw_keypoints \
        --detector maskrcnn
+
+

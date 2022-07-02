@@ -1,11 +1,18 @@
-
 conda activate pare-env
+
+
 cd /root/code/mover/preprocess/merge_preprocess/
-
-
 pare_model=/root/code/mover/preprocess/pare/hrnet_model
 video_file=/root/code/mover/preprocess/pare/Color_flip.mp4
 out_dir=/root/code/mover/preprocess/merge_preprocess/Color_flip-out
+
+
+
+
+
+
+
+
 
 python demo.py \
        --cfg ${pare_model}/config.yaml \
@@ -14,11 +21,6 @@ python demo.py \
        --vid_file ${video_file} \
        --draw_keypoints \
        --detector maskrcnn
-
-
-
-
-
 
 
 DATA_FOLDER='/root/code/mover/preprocess/Color_flip/Color_flip_frames'
