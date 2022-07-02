@@ -12,7 +12,7 @@
 #        --viz=True
 
 
-conda activate mover
+conda activate pare-env
 cd /root/code/mover/preprocess/footskate_reducer/ground_detector
 python op_filter_json.py \
 --root /root/code/mover/preprocess/Color_flip/Color_flip_openpose \
