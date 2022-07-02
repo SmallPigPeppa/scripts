@@ -17,7 +17,7 @@ cd /root/code/mover/preprocess/footskate_reducer/ground_detector
 python op_filter_json.py \
 --root /root/code/mover/preprocess/Color_flip/Color_flip_openpose_backup \
 --dump /root/code/mover/preprocess/Color_flip/mv_smplifyx_input_withPARE_PARE3DJointOneConfidence_OP2DJoints_openpose_filter \
---img_dir  /root/code/mover/preprocess/Color_flip/Color_flip_frames_backup \
+--img_dir  /root/code/mover/preprocess/Color_flip/Color_flip_frames \
 --viz=True
 
 cd /root/code/scripts
