@@ -58,7 +58,6 @@ python main.py \
     --calib_path ${CALIBRATION_FOLDER} \
     --start_opt_stage 3 \
     --end_opt_stage 5 \
-    --batch_size batch_size
 
 
 cd /root/code/scripts
