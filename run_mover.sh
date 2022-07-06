@@ -10,8 +10,10 @@ img_list=$1
 #INPUT_DATA="/is/cluster/hyi/workspace/SceneGeneration/smplify-x_modify/debug/smplify_video_input/"
 #INPUT_DATA="/root/code/mover/preprocess/Color_flip/Color_flip_frames"
 #DATA_FOLDER=${INPUT_DATA}/"mv_smplifyx_input_OneEuroFilter_PARE_PARE3DJointOneConfidence_OP2DJoints"
-DATA_FOLDER="/root/code/mover/preprocess/Color_flip/OneEuro_filter_mv_smplifyx_input_withPARE_PARE3DJointOneConfidence_OP2DJoints"
-OUTPUT_FOLDER="/root/code/mover/preprocess/Color_flip/mover_results"
+#DATA_FOLDER="/root/code/mover/preprocess/Color_flip/OneEuro_filter_mv_smplifyx_input_withPARE_PARE3DJointOneConfidence_OP2DJoints"
+DATA_FOLDER="/root/code/mover/preprocess/out_data/Color_flip/op2smplifyx_withPARE_PARE3DJointOneConfidence_OP2DJoints"
+#OUTPUT_FOLDER="/root/code/mover/preprocess/Color_flip/mover_results"
+OUTPUT_FOLDER="/root/code/mover/preprocess/out_data/Color_flip/modified_smplifyx"
 #CALIBRATION_FOLDER=${INPUT_DATA}/smplifyx_cam
 CALIBRATION_FOLDER=/root/code/smplify-x_modify/smplify_video_input/smplifyx_cam
 #CONFIG_FILE=/is/cluster/hyi/workspace/SceneGeneration/smplify-x_modify/body_models/cfg_files/fit_smplx_video.yaml
@@ -38,7 +40,7 @@ cd /root/code/mover
 python main.py \
     --single "False" \
     --config ${CONFIG_FILE} \
-    --img_list 1 \
+    --img_list [-1] \
     --batch_size ${batch_size} \
     --data_folder ${DATA_FOLDER} \
     --output_folder ${OUTPUT_FOLDER} \
@@ -55,7 +57,8 @@ python main.py \
     --use_video "True" \
     --calib_path ${CALIBRATION_FOLDER} \
     --start_opt_stage 3 \
-    --end_opt_stage 5
+    --end_opt_stage 5 \
+    --batch_size batch_size
 
 
 cd /root/code/scripts
