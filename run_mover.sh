@@ -4,7 +4,7 @@
 # pid=$(printf "%06d" $1)
 # echo ${pid}
 # modify
-batch_size=205
+batch_size=2000
 # img_list=`expr "$1" + "2"`
 img_list=$1
 #INPUT_DATA="/is/cluster/hyi/workspace/SceneGeneration/smplify-x_modify/debug/smplify_video_input/"
