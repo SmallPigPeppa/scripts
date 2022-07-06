@@ -40,7 +40,7 @@ cd /root/code/mover
 python main.py \
     --single "False" \
     --config ${CONFIG_FILE} \
-    --img_list [-1] \
+    --img_list -1 \
     --batch_size ${batch_size} \
     --data_folder ${DATA_FOLDER} \
     --output_folder ${OUTPUT_FOLDER} \
