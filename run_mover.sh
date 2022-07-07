@@ -4,7 +4,7 @@
 # pid=$(printf "%06d" $1)
 # echo ${pid}
 # modify
-batch_size=2949
+batch_size=495
 # img_list=`expr "$1" + "2"`
 img_list=$1
 VIDEO_NAME=test_video1
